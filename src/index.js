@@ -1,3 +1,30 @@
+<<<<<<< CodeSandbox
+import "./styles.css";
+
+const onClickAdd = () => {
+  const inputEl = document.getElementById("add-text").value;
+  document.getElementById("add-text").value = "";
+  const div = document.createElement("div");
+  div.classList.add("list-row");
+  const pTag = document.createElement("p");
+  pTag.innerText = inputEl;
+  div.appendChild(pTag);
+  const li = document.createElement("li");
+  li.appendChild(div);
+  const completeBtn = document.createElement("button");
+  completeBtn.innerText = "Completed";
+  const deleteBtn = document.createElement("button");
+  deleteBtn.innerText = "Delete";
+
+  div.appendChild(completeBtn);
+  div.appendChild(deleteBtn);
+
+  document.getElementById("incomplete-list").appendChild(li);
+};
+
+document.getElementById("add").addEventListener("click", () => onClickAdd());
+
+=======
 // const let
 // var val1 = "variable";
 // console.log(val1);
@@ -23,6 +50,7 @@
 
 // val3 = 'const variable2'
 // const val3 = 'const variable3'
+>>>>>>> GitHub
 
 // const val4 = {
 //   name: "yoshi",
@@ -187,3 +215,4 @@
 const num2 = 100;
 const fee2 = num2 && "something is set";
 console.log(fee2);
+
